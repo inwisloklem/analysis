@@ -1,0 +1,27 @@
+.copyright
+  display: flex
+  flex-direction: column
+  justify-content: center
+  align-items: center
+  height: 120px
+  
+  &__text
+  &__link
+    text-align: center
+    font(0.875em, 1.2, 500)
+    
+  &__text
+    margin-bottom: 10px
+    
+  &__link
+    color: $java
+    text-decoration: none
+    border-bottom: 2px solid $java
+
+    transition: all 0.4s ease-in-out
+
+    &:hover
+      color: $red-ribbon
+      border-bottom-color: $red-ribbon
+
+      transition: all 0.4s ease-in-out

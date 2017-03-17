@@ -1,0 +1,50 @@
+.results
+  position: relative
+  padding-bottom: 30px
+
+  &__block
+    display: flex
+    justify-content: center
+    align-items: center
+    margin-bottom: 40px
+    padding: 0 10px
+    padding-top: 5px
+    height: 100px
+    color: $white
+    background-image: linear-gradient(to right, $java, $magic-mint)
+    text-align: center
+
+  &__title
+    font(1.375em, 1.2, 200, uppercase)
+    
+    @media $desktop
+      width: 600px
+      text-align: left
+      margin-right: 420px
+
+  &__list
+    list-style-type: none
+
+  &__item
+    position: relative
+    padding-left: 40px
+    margin-bottom: 10px
+    background-image: url("../img/image-point.png")
+    background-position: 0 1px
+    background-size: 22px 22px
+    background-repeat: no-repeat
+    font(1.375em, 1.5, 200)
+    
+  &__important
+    font-weight: 500
+
+  @media $desktop
+    &::after
+      position: absolute
+      right: calc(50% - 600px)
+      bottom: 0
+      display: block
+      width: 545px
+      height: 526px
+      background-image: url("../img/image-doctor.png")
+      content: ""

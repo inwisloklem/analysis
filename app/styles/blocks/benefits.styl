@@ -1,0 +1,117 @@
+.benefits
+  padding-bottom: 20px
+  
+  &__wrapper
+    @media $desktop
+      display: flex
+      flex-direction: row
+
+  &__background
+    @media $desktop
+      flex-basis: 50%
+      width: 754px
+      height: 510px
+      background-position: right top
+      background-image: url("../img/background-top.jpg")
+      background-size: 754px 567px
+      background-repeat: no-repeat
+
+  &__inner
+    padding: 20px
+
+    @media $desktop
+      position: relative
+      flex-basis: 50%
+      padding: 20px
+      padding-top: 40px
+      padding-left: 40px
+      max-width: 550px
+
+  &__block
+    display: flex
+    justify-content: left
+    align-items: center
+
+    &--1
+      padding-top: 16px
+      padding-bottom: 10px
+      height: 54px
+      color: $white
+      background-color: $red-ribbon
+
+      .benefits
+        &__title
+          font(1.8em, normal, 200, uppercase)
+          
+          @media $tablet-desktop
+            width: 100%
+            font(2em)
+
+    &--2
+      height: 80px
+      margin-bottom: 20px
+      
+      background-color: $magic-mint
+      
+      @media $tablet-desktop
+        margin-bottom: 0
+        background-color: $white
+
+      .benefits
+        &__title
+          color: $mine-shaft
+          font(1.4em, normal, 200, lowercase)
+
+          @media $tablet-desktop
+            width: 100%
+            font(2em)
+
+    &--3
+      padding-top: 12px
+      padding-bottom: 10px
+      height: 38px
+      color: $white
+      background-color: $red-ribbon
+      font(1.375em, normal, 200)
+
+  &__important
+    color: $shiraz
+    text-transform: uppercase
+    font(1.375em, normal, 500)
+
+  &__mark
+    color: $red-ribbon
+    text-transform: uppenrcase
+    font-weight: 500
+
+  &__text
+    margin-bottom: 40px
+    font(1.75em, 1, 200)
+    
+    @media $desktop
+      margin-bottom: 60px
+
+  &__item
+    position: relative
+    padding-left: 60px
+    margin-bottom: 30px
+    list-style-type: none
+    text-transform: uppercase
+    font(1.375em, 1.2, 200)
+
+  &__icon
+    position: absolute
+    left: 0
+    top: -12px
+    fill: $mine-shaft
+
+  &__note
+    padding-left: 20px
+    text-align: left
+    color: $red-ribbon
+    font(1.375em, 1.5, 500)
+
+    @media $desktop
+      padding-left: 60px
+      text-align: left
+      font(1.75em, 1.5, 500)

@@ -1,0 +1,66 @@
+.recommends
+  padding-top: 40px
+  padding-bottom: 10px
+  background-color: $blue-dianne
+
+  @media $tablet-desktop
+    padding-bottom: 40px
+
+    background-image: url("../img/background-check.jpg")
+    background-size: cover
+    background-position: center top
+    background-repeat: no-repeat
+    
+  &__wrapper
+    @media $tablet-desktop
+      display: flex
+      
+    @media $tablet
+      flex-direction: column-reverse
+      align-items: center
+
+  &__image
+    display: none
+    
+    @media $tablet-desktop
+      display: block
+
+    @media $desktop
+      margin-right: 80px
+
+  &__list
+    list-style-type: none
+    
+    @media $tablet
+      margin-bottom: 40px
+
+  &__text
+    margin-bottom: 20px
+    text-align: center
+    color: $white
+    font(1.375em, 1.2, 200, uppercase)
+
+    @media $desktop
+      margin-top: 60px
+      margin-bottom: 40px
+
+  &__item
+    position: relative
+    margin-bottom: 20px
+    padding-left: 20px
+    color: $white
+    font(1.375em, 1.2, 200)
+    
+    &::before
+      position: absolute
+      left: 0
+      top: 4px
+      display: block
+      width: 10px
+      height: 10px
+      border-radius: 50%
+      background-color: $white
+      content: ""
+      
+      @media $desktop
+        top: 6px

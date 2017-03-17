@@ -1,0 +1,152 @@
+doctype html
+
+html(lang = "ru")
+  include parts/head.pug
+
+  body
+    include parts/svg-sprite.pug
+
+    main
+      section.benefits
+        .benefits__block.benefits__block--1
+          h2.benefits__title.container Оздоровительная программа
+
+        .benefits__block.benefits__block--2
+          h2.benefits__title.container 
+            | #[span.benefits__important Код крови] —&nbsp;безопасный&nbsp;путь&nbsp;к&nbsp;похудению!
+
+        .benefits__wrapper
+          .benefits__background
+          .benefits__inner
+            p.benefits__text Приняв участие в программе, Вы получите:
+
+            ul.benefits__list
+              li.benefits__item
+                svg.benefits__icon(width = 48, height = 48)
+                  use(xlink:href = "#pipette")
+                | #[span.benefits__mark Бесплатный] анализ крови
+
+              li.benefits__item
+                svg.benefits__icon(width = 48, height = 48)
+                  use(xlink:href = "#diagram")
+                span.benefits__mark Выявление непереносимых продуктов
+
+              li.benefits__item
+                svg.benefits__icon(width = 48, height = 48)
+                  use(xlink:href = "#vote")
+                | Вам #[span.benefits__mark бесплатно] составят #[span.benefits__mark индивидуальный план питания],
+                | который поможет решить проблемы со&nbsp;здоровьем
+
+            p.benefits__note АКЦИЯ действует до 22 марта!
+
+        .benefits__block.benefits__block--3
+          .container
+            | Успейте зарегистрироваться — осталось 3 места!
+
+      section.form
+        .container
+          h2.form__title Оставьте заявку на #[span.form__mark бесплатное участие] в программе "Код крови"
+
+          .form__wrapper
+            form.form__block(action = "#", method = "post")
+              label.form__label(for = "name-1") Введите Ваше имя:
+              input.form__name#name-1(type = "text", name = "name", placeholder = "Например, Ирина")
+
+              label.form__label(for = "tel-1") Введите Ваш номер телефона:
+              input.form__tel#tel-1(type = "tel", name = "phone", placeholder = "+7 975 575-75-75")
+
+              button.btn.form__btn(type = "submit") Записаться
+
+            p.form__note * Введенная Вами информация защищена законом о конфеденциальности личных данных
+
+      section.features.container
+        h2.visually-hidden Особенности процедуры:
+
+        ul.features__list
+          li.features__item
+            | Процедура забора крови проводится сертифицированными специалистами
+
+          li.features__item
+            | Оборудование медцентра соответсвует всем санитарно-эпидемиологическим требованиям
+
+          li.features__item.features__item--important
+            | Данная процедура является абсолютно безопасной!
+
+      section.requirements
+        p.requirements__text.container
+          | Для участия в программе #[span.requirements__mark "код крови"] необходимо:
+
+        ul.requirements__list
+          li.requirements__item
+            .requirements__image
+              img(src = "img/image-analysis-1.jpg", alt = "Процесс сдачи крови")
+            .requirements__desc
+              | #[span.requirements__mark Бесплатно] сдать кровь на анализ
+
+          li.requirements__item
+            .requirements__image
+              img(src = "img/image-analysis-2.jpg", alt = "Анализ крови")
+            .requirements__desc
+              | Получить #[span.requirements__mark полную расшифровку] результата анализа крови
+
+          li.requirements__item
+            .requirements__image
+              img(src = "img/image-analysis-3.jpg", alt = "Консультация")
+            .requirements__desc
+              | Получить #[span.requirements__mark бесплатную консультацию] специалиста по питанию
+
+      section.recommends
+        .recommends__wrapper.container
+          .recommends__image
+            img(src = "img/image-requirements.jpg", width = 400, height = 571, alt = "Рекомендации")
+
+          .recommends__inner
+            p.recommends__text Проверка по программе "КОД КРОВИ" рекомендована при следующих заболеваниях:
+
+            ul.recommends__list
+              li.recommends__item Ожирение
+              li.recommends__item Хроническая усталость
+              li.recommends__item Артериальная гипертония
+              li.recommends__item Сахарный диабет II типа
+              li.recommends__item Кожные заболевания различной этиологии
+              li.recommends__item Патологии желудочно-кишечного тракта
+              li.recommends__item Заболевания сердечно-сосудистой системы
+              li.recommends__item Частые простудные заболевания
+
+      section.results
+        .results__block 
+          h2.results__title Результаты #[span.results__important индивидуального плана питания], основанные на анализе "КОД КРОВИ"
+
+        ul.results__list.container
+          li.results__item Снижение веса и обретение гармоничной физической формы
+          li.results__item Улучшение общего самочувствия
+          li.results__item Избавление от аллергических заболеваний
+          li.results__item Нормализация работы желудочно-кишечного тракта
+          li.results__item Укрепление иммунной системы
+          li.results__item Естественное очищение организма
+          li.results__item Улучшение состояния волос, кожи и ногтей
+
+      section.form
+        .container
+          h2.form__title Оставьте заявку на #[span.form__mark бесплатное участие] в программе "Код крови"
+
+          .form__wrapper
+            form.form__block(action = "#", method = "post")
+              label.form__label(for = "name-2") Введите Ваше имя:
+              input.form__name#name-2(type = "text", name = "name", placeholder = "Например, Ирина")
+
+              label.form__label(for = "tel-2") Введите Ваш номер телефона:
+              input.form__tel#tel-2(type = "tel", name = "phone", placeholder = "+7 975 575-75-75")
+
+              button.btn.form__btn(type = "submit") Записаться
+
+            p.form__note * Введенная Вами информация защищена законом о конфеденциальности личных данных
+
+    footer.page-footer
+      section.copyright
+        .copyright__text
+          | ООО&nbsp;"Мариин Лайт" Лицензия&nbsp;№&nbsp;ЛО-77-01-009849 от&nbsp;03&nbsp;марта&nbsp;2015&nbsp;г.
+          br
+          | 129090,&nbsp;г.&nbsp;Москва,&nbsp;Олимпийский&nbsp;проспект,&nbsp;д.&nbsp;16,&nbsp;cтр.&nbsp;1
+
+        a.copyright__link(href = "http://cpapartizan.ru/politika.php", target = "_blank") Политика конфиденциальности

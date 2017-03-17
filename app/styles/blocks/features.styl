@@ -1,0 +1,30 @@
+.features
+  padding-top: 40px
+  padding-bottom: 40px
+
+  &__list
+    list-style-type: none
+
+  &__item
+    position: relative
+    padding-left: 40px
+    margin-bottom: 10px
+    text-transform: uppercase
+    font(1.375em, 1.2, 200)
+
+    &::before
+      position: absolute
+      left: 0
+      top: -2px
+      display: block
+      width: 10px
+      height: 10px
+      border-radius: 50%
+      border: 5px solid $red-ribbon
+      content: ""
+      
+      @media $desktop
+        top: 0
+
+    &--important
+      font-weight: 500
